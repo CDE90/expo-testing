@@ -25,6 +25,7 @@ export function CreatePostForm() {
     defaultValues: {
       content: "",
       title: "",
+      author: "",
     },
   });
 
@@ -70,6 +71,18 @@ export function CreatePostForm() {
             <FormItem>
               <FormControl>
                 <Input {...field} placeholder="Content" />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="author"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input {...field} placeholder="Author" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -135,6 +148,7 @@ export function PostCard(props: {
       <div className="flex-grow">
         <h2 className="text-2xl font-bold text-primary">{props.post.title}</h2>
         <p className="mt-2 text-sm">{props.post.content}</p>
+        <p className="text-sm">Author: {props.post.author}</p>
       </div>
       <div>
         <Button

@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { Button, Pressable, Text, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Button, Pressable, SafeAreaView, Text, View } from "react-native";
+// import { SafeAreaView } from "react-native-safe-area-context";
 import { Link, Stack } from "expo-router";
 import { FlashList } from "@shopify/flash-list";
 
@@ -26,72 +25,16 @@ function PostCard(props: {
               {props.post.title}
             </Text>
             <Text className="mt-2 text-white">{props.post.content}</Text>
+            <Text className="mt-2 text-sm text-white">
+              {props.post.author} -{" "}
+              {new Date(props.post.createdAt).toLocaleString()}
+            </Text>
           </Pressable>
         </Link>
       </View>
       <Pressable onPress={props.onDelete}>
         <Text className="font-bold uppercase text-pink-400">Delete</Text>
       </Pressable>
-    </View>
-  );
-}
-
-function CreatePost() {
-  const utils = api.useUtils();
-
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-
-  const { mutate, error } = api.post.create.useMutation({
-    async onSuccess() {
-      setTitle("");
-      setContent("");
-      await utils.post.all.invalidate();
-    },
-  });
-
-  return (
-    <View className="mt-4">
-      <TextInput
-        className="mb-2 rounded bg-white/10 p-2 text-white"
-        placeholderTextColor="rgba(255, 255, 255, 0.5)"
-        value={title}
-        onChangeText={setTitle}
-        placeholder="Title"
-      />
-      {error?.data?.zodError?.fieldErrors.title && (
-        <Text className="mb-2 text-red-500">
-          {error.data.zodError.fieldErrors.title}
-        </Text>
-      )}
-      <TextInput
-        className="mb-2 rounded bg-white/10 p-2 text-white"
-        placeholderTextColor="rgba(255, 255, 255, 0.5)"
-        value={content}
-        onChangeText={setContent}
-        placeholder="Content"
-      />
-      {error?.data?.zodError?.fieldErrors.content && (
-        <Text className="mb-2 text-red-500">
-          {error.data.zodError.fieldErrors.content}
-        </Text>
-      )}
-      <Pressable
-        className="rounded bg-pink-400 p-2"
-        onPress={() => {
-          mutate({
-            title,
-            content,
-          });
-        }}
-      >
-        <Text className="font-semibold text-white">Publish post</Text>
-      </Pressable>
-      {error?.data?.code === "UNAUTHORIZED" && (
-        <Text className="mt-2 text-red-500">
-          You need to be logged in to create a post
-        </Text>
-      )}
     </View>
   );
 }
@@ -120,6 +63,21 @@ export default function Index() {
           color={"#f472b6"}
         />
 
+        <View className="rounded bg-blue-500 p-2">
+          <Link
+            asChild
+            href={{
+              pathname: "/new",
+            }}
+          >
+            <Pressable>
+              <Text className="text-xl font-semibold text-white">
+                Create a new post
+              </Text>
+            </Pressable>
+          </Link>
+        </View>
+
         <View className="py-2">
           <Text className="font-semibold italic text-white">
             Press on a post
@@ -137,8 +95,6 @@ export default function Index() {
             />
           )}
         />
-
-        <CreatePost />
       </View>
     </SafeAreaView>
   );
