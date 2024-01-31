@@ -62,22 +62,22 @@ importers:
     dependencies:
       '@expo/metro-config':
         specifier: ^0.17.3
-        version: 0.17.3(@react-native/babel-preset@0.73.19)
+        version: 0.17.3(@react-native/babel-preset@0.73.20)
       '@shopify/flash-list':
         specifier: 1.6.3
         version: 1.6.3(@babel/runtime@7.23.9)(react-native@0.73.3)(react@18.2.0)
       '@tanstack/react-query':
-        specifier: ^5.17.19
-        version: 5.17.19(react@18.2.0)
+        specifier: ^5.18.0
+        version: 5.18.0(react@18.2.0)
       '@trpc/client':
         specifier: next
         version: 11.0.0-next-alpha.170
       '@trpc/react-query':
         specifier: next
-        version: 11.0.0-next-alpha.170(@tanstack/react-query@5.17.19)(@trpc/client@11.0.0-next-alpha.170)(react-dom@18.2.0)(react@18.2.0)
+        version: 11.0.0-next-alpha.170(@tanstack/react-query@5.18.0)(@trpc/client@11.0.0-next-alpha.170)(react-dom@18.2.0)(react@18.2.0)
       expo:
         specifier: ^50.0.4
-        version: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+        version: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
       expo-constants:
         specifier: ~15.4.5
         version: 15.4.5(expo@50.0.4)
@@ -188,20 +188,20 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(typescript@5.3.3)(zod@3.22.4)
       '@tanstack/react-query':
-        specifier: ^5.17.19
-        version: 5.17.19(react@18.2.0)
+        specifier: ^5.18.0
+        version: 5.18.0(react@18.2.0)
       '@tanstack/react-query-devtools':
-        specifier: ^5.17.21
-        version: 5.17.21(@tanstack/react-query@5.17.19)(react@18.2.0)
+        specifier: ^5.18.0
+        version: 5.18.0(@tanstack/react-query@5.18.0)(react@18.2.0)
       '@tanstack/react-query-next-experimental':
-        specifier: 5.17.19
-        version: 5.17.19(@tanstack/react-query@5.17.19)(next@14.1.0)(react@18.2.0)
+        specifier: 5.18.0
+        version: 5.18.0(@tanstack/react-query@5.18.0)(next@14.1.0)(react@18.2.0)
       '@trpc/client':
         specifier: next
         version: 11.0.0-next-alpha.170
       '@trpc/react-query':
         specifier: next
-        version: 11.0.0-next-alpha.170(@tanstack/react-query@5.17.19)(@trpc/client@11.0.0-next-alpha.170)(react-dom@18.2.0)(react@18.2.0)
+        version: 11.0.0-next-alpha.170(@tanstack/react-query@5.18.0)(@trpc/client@11.0.0-next-alpha.170)(react-dom@18.2.0)(react@18.2.0)
       '@trpc/server':
         specifier: next
         version: 11.0.0-next-alpha.170
@@ -2610,7 +2610,7 @@ packages:
       safe-json-stringify: 1.2.0
     dev: false
 
-  /@expo/cli@0.17.3(@react-native/babel-preset@0.73.19)(expo-modules-autolinking@1.10.2):
+  /@expo/cli@0.17.3(@react-native/babel-preset@0.73.20)(expo-modules-autolinking@1.10.2):
     resolution: {integrity: sha512-lIK8igsEQxTh4WuDlcEhE0wAJcDrAyjWDF00phdmwuSCpE5SaEXNlddOXvGxEVKPhUxHZUFo9NbfoQC+JVmkfA==}
     hasBin: true
     dependencies:
@@ -2622,7 +2622,7 @@ packages:
       '@expo/env': 0.2.1
       '@expo/image-utils': 0.4.1
       '@expo/json-file': 8.3.0
-      '@expo/metro-config': 0.17.3(@react-native/babel-preset@0.73.19)
+      '@expo/metro-config': 0.17.3(@react-native/babel-preset@0.73.20)
       '@expo/osascript': 2.0.33
       '@expo/package-manager': 1.1.1
       '@expo/plist': 0.1.0
@@ -2820,7 +2820,7 @@ packages:
       json5: 2.2.3
       write-file-atomic: 2.4.3
 
-  /@expo/metro-config@0.17.3(@react-native/babel-preset@0.73.19):
+  /@expo/metro-config@0.17.3(@react-native/babel-preset@0.73.20):
     resolution: {integrity: sha512-YW8ixbaz6yL7/Mg1rJJejiAAVQQKjGY1wXvT2Dh487r/r9/j1yE1YRS/oRY1yItYzbnHvO0p0jMnEGfiFYL3Tg==}
     peerDependencies:
       '@react-native/babel-preset': '*'
@@ -2833,7 +2833,7 @@ packages:
       '@expo/env': 0.2.1
       '@expo/json-file': 8.3.0
       '@expo/spawn-async': 1.7.2
-      '@react-native/babel-preset': 0.73.19(@babel/core@7.23.9)(@babel/preset-env@7.23.9)
+      '@react-native/babel-preset': 0.73.20(@babel/core@7.23.9)(@babel/preset-env@7.23.9)
       babel-preset-fbjs: 3.4.0(@babel/core@7.23.9)
       chalk: 4.1.2
       debug: 4.3.4
@@ -4895,43 +4895,43 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@tanstack/query-core@5.17.19:
-    resolution: {integrity: sha512-Lzw8FUtnLCc9Jwz0sw9xOjZB+/mCCmJev38v2wHMUl/ioXNIhnNWeMxu0NKUjIhAd62IRB3eAtvxAGDJ55UkyA==}
+  /@tanstack/query-core@5.18.0:
+    resolution: {integrity: sha512-8c6nxeAnGHxIDZIyDmHdmgFt4D+LprAQaJmjsnM4szcIjsWOyFlzxdqQUuQ/XuQRvUgqYaqlJTtDADlSS7pTPQ==}
     dev: false
 
-  /@tanstack/query-devtools@5.17.21:
-    resolution: {integrity: sha512-WWfcnNjTEqcuAS5GyKkVGkseuES6yd197MJWGImBu+MoCjWPqxSXKCCfm+utSXJauJUGm7xoMmhqCphiQdjf8w==}
+  /@tanstack/query-devtools@5.18.0:
+    resolution: {integrity: sha512-h0KuF8CboNB7z6+Y6psTwK56JwHD1pNB28gDbc1PaaQ9Q5uD837egYH3qOEEireO/1P3j2s3jVPsbB0+bqdthw==}
     dev: false
 
-  /@tanstack/react-query-devtools@5.17.21(@tanstack/react-query@5.17.19)(react@18.2.0):
-    resolution: {integrity: sha512-Ri1AuWpN67eyPdMTlPxx1TMGNUaxTHrGv0ll0S20ZObz/Xms5wfANV3c6OX0HZTY0igudP1k5jpRLXNkd249mg==}
+  /@tanstack/react-query-devtools@5.18.0(@tanstack/react-query@5.18.0)(react@18.2.0):
+    resolution: {integrity: sha512-zjDOYexc8dvDyaRvrbsjdUD8tjaUTIwOyQxM2Go+rOF+HgAIyn4dLFh/6s+sszRjqDn74oBkUNUeYNnh6zmIOw==}
     peerDependencies:
-      '@tanstack/react-query': ^5.17.19
+      '@tanstack/react-query': ^5.18.0
       react: ^18.0.0
     dependencies:
-      '@tanstack/query-devtools': 5.17.21
-      '@tanstack/react-query': 5.17.19(react@18.2.0)
+      '@tanstack/query-devtools': 5.18.0
+      '@tanstack/react-query': 5.18.0(react@18.2.0)
       react: 18.2.0
     dev: false
 
-  /@tanstack/react-query-next-experimental@5.17.19(@tanstack/react-query@5.17.19)(next@14.1.0)(react@18.2.0):
-    resolution: {integrity: sha512-JLZWhpVtpUccOZvrWvMeK3fe0Atq6kGNDO6RmhXPfyZ3tzCFfVKhu1ws3fP99HUnLX651uMxeNiz9eBqKqL1OQ==}
+  /@tanstack/react-query-next-experimental@5.18.0(@tanstack/react-query@5.18.0)(next@14.1.0)(react@18.2.0):
+    resolution: {integrity: sha512-8xrk+UjXE38MC5pOG3ztdoobXXzFaIXnQ6a1UfLdZCVkXDzt3RbHchpf/ESTjYmKYL5ohJNVO2by19ZMlzjPSQ==}
     peerDependencies:
-      '@tanstack/react-query': ^5.17.19
+      '@tanstack/react-query': ^5.18.0
       next: ^13 || ^14
       react: ^18.0.0
     dependencies:
-      '@tanstack/react-query': 5.17.19(react@18.2.0)
+      '@tanstack/react-query': 5.18.0(react@18.2.0)
       next: 14.1.0(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
 
-  /@tanstack/react-query@5.17.19(react@18.2.0):
-    resolution: {integrity: sha512-qaQENB6/03Gj3dFZGvdmUoqeUGlGm7P1p0RmaR04Bf1Ib1T9lLGimcC9T3oCFbrx0b2ZF21ngjFZNjj9uPJMcg==}
+  /@tanstack/react-query@5.18.0(react@18.2.0):
+    resolution: {integrity: sha512-7FKxNfxxKEL7n3ADpwp81Fy4FX85hNkYVzQQVQsF0JAPl93c3d1gmNZMIbEtOqgYfom1/ontGh3FiZGYj3xyWA==}
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@tanstack/query-core': 5.17.19
+      '@tanstack/query-core': 5.18.0
       react: 18.2.0
     dev: false
 
@@ -4949,7 +4949,7 @@ packages:
     resolution: {integrity: sha512-F2j7XYnvv1hIeyTCKVzRWndMoIUUgHH0I3DP0bqhxmeB7+0tbgKUgAxt5sZ3T3xxUzooczXNbClK3EaHa3c1KA==}
     dev: false
 
-  /@trpc/react-query@11.0.0-next-alpha.170(@tanstack/react-query@5.17.19)(@trpc/client@11.0.0-next-alpha.170)(react-dom@18.2.0)(react@18.2.0):
+  /@trpc/react-query@11.0.0-next-alpha.170(@tanstack/react-query@5.18.0)(@trpc/client@11.0.0-next-alpha.170)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Igcj/x4v1GkIs1Vk7aMjcIT3SYOTSw33ijBl0Scrovw1ExdZWVpYMBTNMbURJNUhiFe5GBxVcwe2OG3Kauij7A==}
     peerDependencies:
       '@tanstack/react-query': ^5.0.0
@@ -4957,7 +4957,7 @@ packages:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
     dependencies:
-      '@tanstack/react-query': 5.17.19(react@18.2.0)
+      '@tanstack/react-query': 5.18.0(react@18.2.0)
       '@trpc/client': 11.0.0-next-alpha.170
       '@trpc/core': 11.0.0-next-alpha.170
       react: 18.2.0
@@ -7747,7 +7747,7 @@ packages:
       expo: '*'
     dependencies:
       '@expo/config': 8.5.4
-      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -7757,7 +7757,7 @@ packages:
     peerDependencies:
       expo: '*'
     dependencies:
-      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
     dev: false
 
   /expo-font@11.10.2(expo@50.0.4):
@@ -7765,7 +7765,7 @@ packages:
     peerDependencies:
       expo: '*'
     dependencies:
-      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
       fontfaceobserver: 2.3.0
     dev: false
 
@@ -7774,7 +7774,7 @@ packages:
     peerDependencies:
       expo: '*'
     dependencies:
-      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
     dev: false
 
   /expo-linking@6.2.2(expo@50.0.4):
@@ -7833,7 +7833,7 @@ packages:
       '@react-navigation/bottom-tabs': 6.5.7(@react-navigation/native@6.1.6)(react-native-safe-area-context@4.8.2)(react-native-screens@3.29.0)(react-native@0.73.3)(react@18.2.0)
       '@react-navigation/native': 6.1.6(react-native@0.73.3)(react@18.2.0)
       '@react-navigation/native-stack': 6.9.12(@react-navigation/native@6.1.6)(react-native-safe-area-context@4.8.2)(react-native-screens@3.29.0)(react-native@0.73.3)(react@18.2.0)
-      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
       expo-constants: 15.4.5(expo@50.0.4)
       expo-linking: 6.2.2(expo@50.0.4)
       expo-splash-screen: 0.26.4(expo-modules-autolinking@1.10.2)(expo@50.0.4)
@@ -7858,7 +7858,7 @@ packages:
       expo: '*'
     dependencies:
       '@expo/prebuild-config': 6.7.4(expo-modules-autolinking@1.10.2)
-      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19)
+      expo: 50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20)
     transitivePeerDependencies:
       - encoding
       - expo-modules-autolinking
@@ -7869,15 +7869,15 @@ packages:
     resolution: {integrity: sha512-ddQEtCOgYHTLlFUe/yH67dDBIoct5VIULthyT3LRJbEwdpzAgueKsX2FYK02ldh440V87PWKCamh7R9evk1rrg==}
     dev: false
 
-  /expo@50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.19):
+  /expo@50.0.4(@babel/core@7.23.9)(@react-native/babel-preset@0.73.20):
     resolution: {integrity: sha512-8QWBvYZyKFd7pHxbtri8/ZITBR19QbrW2IkezAhs3ZOHR2kluSgNfyo9ojAe7GnOnE8hCB6Xe83Dbm0R3Ealhw==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.23.9
-      '@expo/cli': 0.17.3(@react-native/babel-preset@0.73.19)(expo-modules-autolinking@1.10.2)
+      '@expo/cli': 0.17.3(@react-native/babel-preset@0.73.20)(expo-modules-autolinking@1.10.2)
       '@expo/config': 8.5.4
       '@expo/config-plugins': 7.8.4
-      '@expo/metro-config': 0.17.3(@react-native/babel-preset@0.73.19)
+      '@expo/metro-config': 0.17.3(@react-native/babel-preset@0.73.20)
       '@expo/vector-icons': 14.0.0
       babel-preset-expo: 10.0.1(@babel/core@7.23.9)
       expo-asset: 9.0.2(expo@50.0.4)
